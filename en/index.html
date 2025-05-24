@@ -3,48 +3,40 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>P.R. GENERAL TRADING</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss @2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <style>
-    /* Personalizzazioni aggiuntive */
-    .bg-blue-900 { background-color: #1E3A8A; }
-    .hover\:bg-blue-700:hover { background-color: #2563EB; }
-  </style>
+  <title>P.R. General Trading</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="bg-white">
 
   <!-- Navbar -->
-  <nav class="bg-white shadow-md">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between h-16">
+  <nav class="navbar bg-white shadow-md">
+    <div class="container mx-auto px-4">
+      <div class="flex justify-between items-center h-16">
+        <!-- Logo e Nome -->
         <div class="flex items-center">
-          <div class="flex-shrink-0 flex items-center">
-            <div class="h-8 w-8 bg-blue-600 rounded"></div>
-            <span class="ml-2 text-xl font-bold text-gray-800">P.R. GENERAL TRADING LLC SPC</span>
-          </div>
+          <div class="h-8 w-8 bg-blue-600 rounded"></div>
+          <span class="ml-2 text-xl font-bold text-gray-800">P.R. GENERAL TRADING LLC SPC</span>
         </div>
-        
-        <div class="hidden md:flex items-center space-x-4">
-          <a href="index.html" class="px-3 py-2 rounded-md text-sm font-medium text-blue-600 bg-blue-50">Home</a>
-          <a href="services.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-600">Services</a>
-          <a href="map.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-600">Map</a>
-          <a href="team.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-600">Team</a>
-          <a href="contact.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-600">Contact</a>
-        </div>
-        
-        <div class="flex items-center md:hidden">
-          <button onclick="toggleMenu()" class="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-blue-600 focus:outline-none">
-            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button>
-        </div>
+
+        <!-- Menu Desktop -->
+        <ul class="hidden md:flex space-x-4">
+          <li><a href="index.html" class="text-blue-600 bg-blue-50 px-3 py-2 rounded-md">Home</a></li>
+          <li><a href="services.html" class="text-gray-700 hover:text-blue-600 px-3 py-2">Services</a></li>
+          <li><a href="map.html" class="text-gray-700 hover:text-blue-600 px-3 py-2">Map</a></li>
+          <li><a href="team.html" class="text-gray-700 hover:text-blue-600 px-3 py-2">Team</a></li>
+          <li><a href="contact.html" class="text-gray-700 hover:text-blue-600 px-3 py-2">Contact</a></li>
+        </ul>
+
+        <!-- Menu Hamburger -->
+        <button onclick="toggleMenu()" class="md:hidden">
+          <svg class="w-6 h-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
       </div>
-    </div>
-    
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="md:hidden hidden">
-      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+
+      <!-- Menu Mobile (nascosto di default) -->
+      <div id="mobile-menu" class="hidden md:hidden mt-2 pb-3 space-y-2">
         <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-blue-600 bg-blue-50">Home</a>
         <a href="services.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50">Services</a>
         <a href="map.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50">Map</a>
@@ -55,134 +47,144 @@
   </nav>
 
   <!-- Hero Section -->
-  <div class="relative bg-blue-900">
+  <section class="relative bg-blue-900">
     <div class="absolute inset-0">
-      <img src="https://placehold.co/1920x800/2563eb/ffffff?text=Oil+%26+Gas+Trading " class="w-full h-full object-cover" />
+      <img src="https://placehold.co/1920x800/2563eb/ffffff?text=Oil+%26+Gas+Trading " 
+           alt="Global Trading" class="w-full h-full object-cover">
       <div class="absolute inset-0 bg-blue-900 mix-blend-multiply"></div>
     </div>
-    <div class="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8 text-center">
-      <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">Global Commodity Trading</h1>
-      <p class="mt-6 max-w-3xl text-xl text-blue-100">Specializing in industrial metals and Oil & Gas products with global reach.</p>
-      <div class="mt-10">
-        <a href="contact.html" class="inline-block rounded-md border border-transparent bg-blue-600 px-8 py-3 text-center font-medium text-white shadow hover:bg-blue-700 transition duration-300">
+    <div class="relative container mx-auto px-4 py-24 sm:py-32">
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white text-center">
+        Global Commodity Trading
+      </h1>
+      <p class="mt-6 max-w-3xl text-xl text-blue-100 mx-auto text-center">
+        Specializing in industrial metals and Oil & Gas products with global reach and decades of expertise.
+      </p>
+      <div class="mt-10 text-center">
+        <a href="contact.html" class="inline-block px-8 py-3 bg-blue-600 text-white rounded-md shadow hover:bg-blue-700 transition">
           Contact Us
         </a>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- About Section -->
-  <div class="py-16 bg-gray-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="lg:text-center">
-        <h2 class="text-base text-blue-600 font-semibold tracking-wide uppercase">About Us</h2>
-        <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">Leading the Way in Commodity Trading</p>
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="text-center">
+        <h2 class="text-base text-blue-600 font-semibold uppercase">About Us</h2>
+        <h3 class="mt-2 text-3xl sm:text-4xl font-bold text-gray-900">Leading the Way in Commodity Trading</h3>
+        <p class="mt-4 max-w-2xl text-xl text-gray-500 mx-auto">
+          With decades of experience in the energy sector, we provide reliable solutions for your commodity needs.
+        </p>
       </div>
 
-      <div class="mt-16">
-        <div class="lg:grid lg:grid-cols-2 lg:gap-8">
-          <div>
-            <h3 class="text-2xl font-bold text-gray-900">Our Story</h3>
-            <p class="mt-4 text-gray-500">Established in Abu Dhabi, P.R. GENERAL TRADING LLC SPC has grown to become a trusted name in the global commodities market.</p>
+      <!-- Due Colonne -->
+      <div class="mt-16 grid md:grid-cols-2 gap-8">
+        <div>
+          <h4 class="text-2xl font-bold text-gray-900">Our Story</h4>
+          <p class="mt-4 text-gray-500">
+            Established in Abu Dhabi, P.R. GENERAL TRADING LLC SPC has grown to become a trusted name in the global commodities market.
+          </p>
+        </div>
+        <div>
+          <h4 class="text-2xl font-bold text-gray-900">Our Expertise</h4>
+          <p class="mt-4 text-gray-500">
+            We work with banks in the UAE to facilitate secure and efficient transactions. Our logistics team ensures timely delivery and compliance with all international shipping regulations.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servizi (Grid 3 Colonne) -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center">
+        <h2 class="text-base text-blue-600 font-semibold uppercase">Featured Products</h2>
+        <h3 class="mt-2 text-3xl sm:text-4xl font-bold text-gray-900">Key Commodities We Trade</h3>
+      </div>
+
+      <!-- Card Servizi -->
+      <div class="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <!-- Card 1 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img src="https://placehold.co/600x400/2563eb/ffffff?text=Industrial+Metals " 
+               alt="Industrial Metals" class="h-48 w-full object-cover">
+          <div class="p-6">
+            <h4 class="text-xl font-semibold text-gray-900">Industrial Metals Trading</h4>
+            <p class="mt-3 text-base text-gray-500">
+              We specialize in the trading of various industrial metals sourced from reliable suppliers globally.
+            </p>
+            <a href="services.html" class="mt-4 inline-block text-sm font-medium text-blue-600 hover:text-blue-800">
+              Learn more →
+            </a>
           </div>
-          
-          <div class="mt-10 lg:mt-0">
-            <h3 class="text-2xl font-bold text-gray-900">Our Expertise</h3>
-            <p class="mt-4 text-gray-500">We work with banks in the UAE to facilitate secure and efficient transactions.</p>
-            <div class="mt-8">
-              <img src="https://placehold.co/600x400/2563eb/ffffff?text=Global+Network " alt="Global Network" class="rounded-lg shadow-lg" />
-            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img src="https://placehold.co/600x400/2563eb/ffffff?text=Diesel+EN590 " 
+               alt="Diesel EN590" class="h-48 w-full object-cover">
+          <div class="p-6">
+            <h4 class="text-xl font-semibold text-gray-900">Diesel (EN590 10 PPM)</h4>
+            <p class="mt-3 text-base text-gray-500">
+              High-quality diesel fuel that meets the EN590 standard with 10 PPM sulfur content.
+            </p>
+            <a href="services.html" class="mt-4 inline-block text-sm font-medium text-blue-600 hover:text-blue-800">
+              Learn more →
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img src="https://placehold.co/600x400/2563eb/ffffff?text=Urea+Fertilizer " 
+               alt="Urea Fertilizer" class="h-48 w-full object-cover">
+          <div class="p-6">
+            <h4 class="text-xl font-semibold text-gray-900">Urea (Fertilizer)</h4>
+            <p class="mt-3 text-base text-gray-500">
+              Agricultural-grade urea for fertilizer applications, meeting international quality standards.
+            </p>
+            <a href="services.html" class="mt-4 inline-block text-sm font-medium text-blue-600 hover:text-blue-800">
+              Learn more →
+            </a>
           </div>
         </div>
       </div>
     </div>
-  </div>
-
-  <!-- Services Grid -->
-  <div class="py-16 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="lg:text-center">
-        <h2 class="text-base text-blue-600 font-semibold tracking-wide uppercase">Featured Products</h2>
-        <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">Key Commodities We Trade</p>
-      </div>
-
-      <div class="mt-16">
-        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
-            <img class="h-48 w-full object-cover" src="https://placehold.co/600x400/2563eb/ffffff?text=Industrial+Metals " alt="Industrial Metals" />
-            <div class="flex-1 bg-white p-6 flex flex-col justify-between">
-              <div>
-                <h3 class="text-xl font-semibold text-gray-900">Industrial Metals Trading</h3>
-                <p class="mt-3 text-base text-gray-500">We specialize in the trading of various industrial metals sourced globally.</p>
-              </div>
-              <div class="mt-6">
-                <a href="services.html" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 transition duration-300">
-                  Learn more
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Altri prodotti -->
-          <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
-            <img class="h-48 w-full object-cover" src="https://placehold.co/600x400/2563eb/ffffff?text=Diesel+EN590 " alt="Diesel EN590" />
-            <div class="flex-1 bg-white p-6 flex flex-col justify-between">
-              <div>
-                <h3 class="text-xl font-semibold text-gray-900">Diesel (EN590 10 PPM)</h3>
-                <p class="mt-3 text-base text-gray-500">High-quality diesel fuel that meets the EN590 standard with 10 PPM sulfur content.</p>
-              </div>
-              <div class="mt-6">
-                <a href="services.html" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 transition duration-300">
-                  Learn more
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
-            <img class="h-48 w-full object-cover" src="https://placehold.co/600x400/2563eb/ffffff?text=Urea+Fertilizer " alt="Urea Fertilizer" />
-            <div class="flex-1 bg-white p-6 flex flex-col justify-between">
-              <div>
-                <h3 class="text-xl font-semibold text-gray-900">Urea (Fertilizer)</h3>
-                <p class="mt-3 text-base text-gray-500">Agricultural-grade urea for fertilizer applications, meeting international quality standards.</p>
-              </div>
-              <div class="mt-6">
-                <a href="services.html" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 transition duration-300">
-                  Learn more
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  </section>
 
   <!-- CTA Section -->
-  <div class="bg-blue-900">
-    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
-      <h2 class="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
-        <span class="block">Ready to work with us?</span>
-        <span class="block text-blue-300">Get in touch today.</span>
-      </h2>
-      <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
-        <div class="inline-flex rounded-md shadow">
-          <a href="contact.html" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-blue-50 transition duration-300">
-            Contact Us
-          </a>
-        </div>
+  <section class="bg-blue-900">
+    <div class="container mx-auto px-4 py-12 sm:py-16 flex flex-col sm:flex-row items-center justify-between">
+      <div class="text-center sm:text-left">
+        <h2 class="text-3xl font-extrabold text-white">
+          Ready to work with us?
+        </h2>
+        <p class="mt-2 text-blue-300">Get in touch today.</p>
+      </div>
+      <div class="mt-6 sm:mt-0">
+        <a href="contact.html" class="inline-block px-6 py-3 bg-white text-blue-600 rounded-md shadow hover:bg-blue-50 transition">
+          Contact Us
+        </a>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- Footer -->
   <footer class="bg-gray-900 text-white">
-    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div class="container mx-auto px-4 py-12">
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- About -->
         <div>
           <h3 class="text-lg font-semibold mb-4">About Us</h3>
-          <p class="text-gray-300">With decades of experience in the energy sector, we provide reliable solutions for your commodity needs.</p>
+          <p class="text-gray-300">
+            With decades of experience in the energy sector, we provide reliable solutions for your commodity needs.
+          </p>
         </div>
+
+        <!-- Info -->
         <div>
           <h3 class="text-lg font-semibold mb-4">Contact Information</h3>
           <ul class="space-y-2 text-gray-300">
@@ -193,6 +195,8 @@
             <li>Email: info@ptradingag.com</li>
           </ul>
         </div>
+
+        <!-- Quick Links -->
         <div>
           <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
           <ul class="space-y-2">
@@ -204,17 +208,15 @@
           </ul>
         </div>
       </div>
+
+      <!-- Copyright -->
       <div class="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
         <p>&copy; 2025 P.R. GENERAL TRADING LLC SPC. All rights reserved.</p>
       </div>
     </div>
   </footer>
 
-  <!-- JavaScript -->
-  <script>
-    function toggleMenu() {
-      document.getElementById('mobile-menu').classList.toggle('hidden');
-    }
-  </script>
+  <!-- Script -->
+  <script src="js/main.js"></script>
 </body>
 </html>
