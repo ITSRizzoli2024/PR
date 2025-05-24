@@ -5,7 +5,134 @@ body {
   background-color: #f8f9fa;
   color: #333;
 }
-/* ... trimmed for brevity (already stored in canvas) ... */
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a,
+.nav-links button {
+  text-decoration: none;
+  color: #2563eb;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+}
+
+.nav-links a.active {
+  font-weight: bold;
+  border-bottom: 2px solid #2563eb;
+}
+
+.hero {
+  position: relative;
+  text-align: right;
+  color: white;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  max-width: 600px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.hero-text .btn {
+  padding: 0.75rem 1.5rem;
+  background-color: #2563eb;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.hero-text .btn:hover {
+  background-color: #1e40af;
+}
+
+section {
+  padding: 4rem 0;
+}
+
+.products .product-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.products .product img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.products .product h3 {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.footer {
+  background-color: #111;
+  color: #eee;
+  padding: 2rem 0;
+}
+
+.footer-info {
+  margin-bottom: 1rem;
+}
+
+.footer p {
+  margin: 0.5rem 0;
+}
+
 .footer .container {
   text-align: center;
 }
