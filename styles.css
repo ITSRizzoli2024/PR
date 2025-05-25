@@ -1,3 +1,10 @@
+/* Add to top of styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
 /* Base styles */
 body {
   margin: 0;
@@ -208,4 +215,71 @@ section {
   border-top: 1px solid #333;
   padding-top: 1rem;
   background-color: #0a0a0a;
+}
+
+/* Cards with images */
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  max-height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.card .btn {
+  margin-top: 1rem;
+}
+
+/* Box in About with image */
+.about .grid-3 div {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  text-align: center;
+}
+
+.about .grid-3 img {
+  width: 100%;
+  height: auto;
+  max-height: 160px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.about .grid-3 h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.about .grid-3 p {
+  font-size: 0.95rem;
+  color: #444;
 }
