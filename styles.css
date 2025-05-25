@@ -1,4 +1,4 @@
-/* Updated styles.css */
+/* Base styles */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -130,30 +130,82 @@ section {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.products .product img {
-  width: 100%;
-  border-radius: 6px;
+.products .product {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  text-align: center;
 }
 
 .products .product h3 {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   font-size: 1.2rem;
 }
 
+.products .product p {
+  font-size: 0.95rem;
+  color: #555;
+  margin: 0.5rem 0 1rem;
+}
+
+.products .product .btn {
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+}
+
+/* Grid layout for About section */
+.grid-3 {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  margin-top: 2rem;
+}
+
+/* CTA box in about section */
+.cta-box {
+  background-color: #2563eb;
+  color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* CTA full-width strip */
+.cta-strip {
+  background-color: #1e3a8a;
+  color: white;
+  padding: 3rem 0;
+}
+
+.cta-strip .flex-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* Footer layout */
 .footer {
   background-color: #111;
   color: #eee;
   padding: 2rem 0;
 }
 
-.footer-info {
-  margin-bottom: 1rem;
+.footer .grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
 }
 
-.footer p {
-  margin: 0.5rem 0;
-}
-
-.footer .container {
+.footer-bottom {
   text-align: center;
+  font-size: 0.875rem;
+  color: #aaa;
+  border-top: 1px solid #333;
+  padding-top: 1rem;
+  background-color: #0a0a0a;
 }
