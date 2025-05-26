@@ -36,10 +36,31 @@ body {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
   align-items: center;
   padding: 0;
   margin: 0;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  .nav-links.show-nav {
+    display: flex;
+  }
+  .hamburger {
+    display: block;
+  }
 }
 
 .nav-links li {
