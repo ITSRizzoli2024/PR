@@ -90,16 +90,17 @@ body {
 }
 
 .hero {
-  position: relative;
-  height: 80vh;
-  background-image: url('https://placehold.co/1920x800/2563eb/ffffff?text=Oil+%26+Gas+Trading');
+  background-image: url("img/hero.jpg");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  min-height: 400px; /* regola secondo il contenuto */
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  color: white;
-  overflow: hidden;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
 }
 
 .hero::before {
