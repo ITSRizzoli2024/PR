@@ -114,8 +114,13 @@ body {
 }
 
 .hero-text {
-  position: relative;
-  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.6); /* 👈 opacità regolabile */
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
 }
 
 .hero-text h1 {
