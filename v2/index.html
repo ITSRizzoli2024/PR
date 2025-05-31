@@ -1,1 +1,264 @@
 
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P.R. General Trading LLC - Oil & Gas Commodities</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <div class="logo-image">
+                    <span>LOGO<br>60x60</span>
+                </div>
+                <div class="logo-text">P.R. GENERAL TRADING LLC</div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" onclick="showSection('home')" class="nav-link active" data-en="Home" data-ar="الرئيسية">Home</a></li>
+                    <li><a href="#" onclick="showSection('services')" class="nav-link" data-en="Services" data-ar="الخدمات">Services</a></li>
+                    <li><a href="#" onclick="showSection('location')" class="nav-link" data-en="Location" data-ar="الموقع">Location</a></li>
+                    <li><a href="#" onclick="showSection('contact')" class="nav-link" data-en="Contact" data-ar="اتصل بنا">Contact</a></li>
+                    <li><button class="lang-switch" onclick="toggleLanguage()">عربي</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="hero-content">
+            <h1 data-en="Global Oil & Gas Trading Excellence" data-ar="التميز في تجارة النفط والغاز العالمية">Global Oil & Gas Trading Excellence</h1>
+            <p data-en="Leading commodities trader specializing in industrial metals and petroleum products across international markets" data-ar="تاجر سلع رائد متخصص في المعادن الصناعية والمنتجات البترولية عبر الأسواق الدولية">Leading commodities trader specializing in industrial metals and petroleum products across international markets</p>
+            
+            <!-- Hero Image Placeholder -->
+            <div class="image-placeholder" style="height: 400px; margin-top: 2rem;">
+                <span>Hero Image<br>Recommended: 1200x400px<br>Oil tanker or refinery landscape</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Home Section -->
+    <section id="home" class="section active">
+        <h2 data-en="Welcome to P.R. General Trading" data-ar="مرحباً بكم في P.R. General Trading" style="text-align: center; margin-bottom: 2rem; color: var(--primary-color);">Welcome to P.R. General Trading</h2>
+        
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3 data-en="EN590 10 PPM Diesel" data-ar="ديزل EN590 10 PPM">EN590 10 PPM Diesel</h3>
+                <p data-en="Premium quality ultra-low sulfur diesel meeting European standards for cleaner emissions and superior performance" data-ar="ديزل عالي الجودة منخفض الكبريت يلبي المعايير الأوروبية لانبعاثات أنظف وأداء متفوق">Premium quality ultra-low sulfur diesel meeting European standards for cleaner emissions and superior performance</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🌱</div>
+                <h3 data-en="Urea Fertilizer" data-ar="سماد اليوريا">Urea Fertilizer</h3>
+                <p data-en="High-grade agricultural urea for enhanced crop yields and sustainable farming practices worldwide" data-ar="يوريا زراعية عالية الجودة لتحسين محاصيل المحاصيل وممارسات الزراعة المستدامة في جميع أنحاء العالم">High-grade agricultural urea for enhanced crop yields and sustainable farming practices worldwide</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">✈️</div>
+                <h3 data-en="Jet Fuel A1" data-ar="وقود الطائرات A1">Jet Fuel A1</h3>
+                <p data-en="Aviation turbine fuel meeting international specifications for commercial and military aircraft" data-ar="وقود توربينات الطيران يلبي المواصفات الدولية للطائرات التجارية والعسكرية">Aviation turbine fuel meeting international specifications for commercial and military aircraft</p>
+            </div>
+        </div>
+
+        <div style="margin-top: 4rem;">
+            <h3 data-en="Our Global Reach" data-ar="انتشارنا العالمي" style="text-align: center; margin-bottom: 2rem;">Our Global Reach</h3>
+            
+            <!-- World Map Placeholder -->
+            <div class="image-placeholder" style="height: 300px;">
+                <span>World Map Image<br>Recommended: 1000x300px<br>Showing trade routes from Kazakhstan, Azerbaijan, Turkey, Oman to global destinations</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <h2 data-en="Our Services" data-ar="خدماتنا" style="text-align: center; margin-bottom: 3rem; color: var(--primary-color);">Our Services</h2>
+        
+        <div class="products-grid">
+            <div class="product-card">
+                <!-- Product Image Placeholder -->
+                <div class="image-placeholder" style="height: 200px;">
+                    <span>Diesel Fuel Image<br>300x200px</span>
+                </div>
+                <div class="product-content">
+                    <h3 data-en="EN590 10 PPM Diesel" data-ar="ديزل EN590 10 PPM">EN590 10 PPM Diesel</h3>
+                    <p data-en="Ultra-low sulfur diesel fuel compliant with European standards. Available for CIF and FOB delivery terms." data-ar="وقود ديزل منخفض الكبريت متوافق مع المعايير الأوروبية. متاح لشروط التسليم CIF و FOB.">Ultra-low sulfur diesel fuel compliant with European standards. Available for CIF and FOB delivery terms.</p>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <!-- Product Image Placeholder -->
+                <div class="image-placeholder" style="height: 200px;">
+                    <span>Urea Fertilizer Image<br>300x200px</span>
+                </div>
+                <div class="product-content">
+                    <h3 data-en="Urea Fertilizer" data-ar="سماد اليوريا">Urea Fertilizer</h3>
+                    <p data-en="Premium agricultural urea with 46% nitrogen content. Sourced from reliable producers for consistent quality." data-ar="يوريا زراعية ممتازة بمحتوى نيتروجين 46٪. مصدرها منتجون موثوقون لضمان جودة ثابتة.">Premium agricultural urea with 46% nitrogen content. Sourced from reliable producers for consistent quality.</p>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <!-- Product Image Placeholder -->
+                <div class="image-placeholder" style="height: 200px;">
+                    <span>Jet Fuel Image<br>300x200px</span>
+                </div>
+                <div class="product-content">
+                    <h3 data-en="Jet Fuel A1" data-ar="وقود الطائرات A1">Jet Fuel A1</h3>
+                    <p data-en="Aviation kerosene meeting ASTM D1655 and DEF STAN 91-91 specifications. Global delivery capabilities." data-ar="كيروسين الطيران يلبي مواصفات ASTM D1655 و DEF STAN 91-91. قدرات التسليم العالمية.">Aviation kerosene meeting ASTM D1655 and DEF STAN 91-91 specifications. Global delivery capabilities.</p>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <!-- Product Image Placeholder -->
+                <div class="image-placeholder" style="height: 200px;">
+                    <span>Crude Oil Image<br>300x200px</span>
+                </div>
+                <div class="product-content">
+                    <h3 data-en="Crude Oil" data-ar="النفط الخام">Crude Oil</h3>
+                    <p data-en="Various grades of crude oil from Middle East and Central Asian sources. Tanker vessel transportation available." data-ar="درجات مختلفة من النفط الخام من مصادر الشرق الأوسط وآسيا الوسطى. النقل بالناقلات متاح.">Various grades of crude oil from Middle East and Central Asian sources. Tanker vessel transportation available.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div style="margin-top: 4rem; background: var(--bg-light); padding: 3rem; border-radius: 8px;">
+            <h3 data-en="Why Choose P.R. General Trading?" data-ar="لماذا تختار P.R. General Trading؟" style="text-align: center; margin-bottom: 2rem;">Why Choose P.R. General Trading?</h3>
+            
+            <div class="features-grid">
+                <div style="text-align: center;">
+                    <div class="feature-icon" style="margin: 0 auto;">🌍</div>
+                    <h4 data-en="Global Network" data-ar="شبكة عالمية">Global Network</h4>
+                    <p data-en="Strategic partnerships in Kazakhstan, Azerbaijan, Turkey, and Oman" data-ar="شراكات استراتيجية في كازاخستان وأذربيجان وتركيا وعمان">Strategic partnerships in Kazakhstan, Azerbaijan, Turkey, and Oman</p>
+                </div>
+                
+                <div style="text-align: center;">
+                    <div class="feature-icon" style="margin: 0 auto;">🚢</div>
+                    <h4 data-en="Marine Logistics" data-ar="الخدمات اللوجستية البحرية">Marine Logistics</h4>
+                    <p data-en="Own fleet of petroleum tankers for reliable worldwide delivery" data-ar="أسطول خاص من ناقلات البترول للتسليم الموثوق في جميع أنحاء العالم">Own fleet of petroleum tankers for reliable worldwide delivery</p>
+                </div>
+                
+                <div style="text-align: center;">
+                    <div class="feature-icon" style="margin: 0 auto;">👷</div>
+                    <h4 data-en="Expert Team" data-ar="فريق خبراء">Expert Team</h4>
+                    <p data-en="Experienced petroleum engineers and technicians on-site support" data-ar="مهندسون وفنيون بترول ذوو خبرة للدعم في الموقع">Experienced petroleum engineers and technicians on-site support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="section">
+        <h2 data-en="Our Locations" data-ar="مواقعنا" style="text-align: center; margin-bottom: 3rem; color: var(--primary-color);">Our Locations</h2>
+        
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-bottom: 3rem;">
+            <div>
+                <h3 data-en="Headquarters - Abu Dhabi" data-ar="المقر الرئيسي - أبوظبي">Headquarters - Abu Dhabi</h3>
+                <p data-en="Building Al Hashem Marble 1, 403" data-ar="مبنى الهاشم ماربل 1، 403">Building Al Hashem Marble 1, 403</p>
+                <p data-en="Al Kawakib St. Musaffah" data-ar="شارع الكواكب، مصفح">Al Kawakib St. Musaffah</p>
+                <p data-en="ABU DHABI 20319, UAE" data-ar="أبوظبي 20319، الإمارات العربية المتحدة">ABU DHABI 20319, UAE</p>
+                <p><strong data-en="Licence No:" data-ar="رقم الرخصة:">Licence No:</strong> CN-538 847 9</p>
+            </div>
+            
+            <div>
+                <h3 data-en="Operations Office - Dubai" data-ar="مكتب العمليات - دبي">Operations Office - Dubai</h3>
+                <p data-en="Our operational team coordinates global trading activities from our Dubai office, leveraging the emirate's strategic location and world-class infrastructure." data-ar="ينسق فريق العمليات لدينا أنشطة التداول العالمية من مكتبنا في دبي، مستفيدين من الموقع الاستراتيجي للإمارة والبنية التحتية ذات المستوى العالمي.">Our operational team coordinates global trading activities from our Dubai office, leveraging the emirate's strategic location and world-class infrastructure.</p>
+            </div>
+        </div>
+        
+        <!-- Map Container -->
+        <div class="map-container">
+            <div class="image-placeholder" style="height: 100%; display: flex; align-items: center; justify-content: center;">
+                <span>Interactive Map<br>Show Abu Dhabi headquarters location<br>Consider using Google Maps embed</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2 data-en="Contact Us" data-ar="اتصل بنا" style="text-align: center; margin-bottom: 3rem; color: var(--primary-color);">Contact Us</h2>
+        
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start;">
+            <div>
+                <h3 data-en="Get in Touch" data-ar="تواصل معنا">Get in Touch</h3>
+                <p data-en="Ready to discuss your petroleum and commodities requirements? Our expert team is here to provide tailored solutions for your business needs." data-ar="هل أنت مستعد لمناقشة متطلباتك من البترول والسلع؟ فريق الخبراء لدينا هنا لتقديم حلول مخصصة لاحتياجات عملك.">Ready to discuss your petroleum and commodities requirements? Our expert team is here to provide tailored solutions for your business needs.</p>
+                
+                <div style="margin-top: 2rem;">
+                    <p><strong data-en="Mobile:" data-ar="الهاتف المحمول:">Mobile:</strong> +971 50 596 3661</p>
+                    <p><strong data-en="Email:" data-ar="البريد الإلكتروني:">Email:</strong> info@prgeneraltrading.com</p>
+                </div>
+                
+                <!-- Office Image Placeholder -->
+                <div class="image-placeholder" style="height: 200px; margin-top: 2rem;">
+                    <span>Office Building Image<br>400x200px</span>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <form onsubmit="handleSubmit(event)">
+                    <div class="form-group">
+                        <label for="name" data-en="Your Name" data-ar="اسمك">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email" data-en="Email Address" data-ar="عنوان البريد الإلكتروني">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject" data-en="Subject" data-ar="الموضوع">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message" data-en="Message" data-ar="الرسالة">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn" data-en="Send Message" data-ar="إرسال الرسالة">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <div class="footer-section">
+                    <h3 data-en="About P.R. General Trading" data-ar="حول P.R. General Trading">About P.R. General Trading</h3>
+                    <p data-en="Leading commodities trader based in Abu Dhabi, specializing in petroleum products and industrial metals with global reach." data-ar="تاجر سلع رائد مقره في أبوظبي، متخصص في المنتجات البترولية والمعادن الصناعية مع انتشار عالمي.">Leading commodities trader based in Abu Dhabi, specializing in petroleum products and industrial metals with global reach.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 data-en="Our Products" data-ar="منتجاتنا">Our Products</h3>
+                    <ul>
+                        <li data-en="EN590 10 PPM Diesel" data-ar="ديزل EN590 10 PPM">EN590 10 PPM Diesel</li>
+                        <li data-en="Urea Fertilizer" data-ar="سماد اليوريا">Urea Fertilizer</li>
+                        <li data-en="Jet Fuel A1" data-ar="وقود الطائرات A1">Jet Fuel A1</li>
+                        <li data-en="Crude Oil" data-ar="النفط الخام">Crude Oil</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 data-en="Contact Information" data-ar="معلومات الاتصال">Contact Information</h3>
+                    <p data-en="Mobile: +971 50 596 3661" data-ar="الهاتف المحمول: +971 50 596 3661">Mobile: +971 50 596 3661</p>
+                    <p data-en="Email: info@prgeneraltrading.com" data-ar="البريد الإلكتروني: info@prgeneraltrading.com">Email: info@prgeneraltrading.com</p>
+                    <p data-en="Licence No: CN-538 847 9" data-ar="رقم الرخصة: CN-538 847 9">Licence No: CN-538 847 9</p>
+                </div>
+            </div>
+            
+            <div style="border-top: 1px solid rgba(255,255,255,0.2); margin-top: 2rem; padding-top: 1rem;">
+                <p>&copy; 2024 P.R. GENERAL TRADING LLC SPC. <span data-en="All rights reserved." data-ar="جميع الحقوق محفوظة.">All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
