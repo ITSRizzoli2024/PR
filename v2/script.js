@@ -36,32 +36,6 @@ function showSection(sectionId) {
     window.scrollTo(0, 0);
 }
 
-// Form submission handler
-function handleSubmit(event) {
-    event.preventDefault();
-    
-    // Get form data
-    const formData = new FormData(event.target);
-    const data = {
-        name: formData.get('name'),
-        email: formData.get('email'),
-        subject: formData.get('subject'),
-        message: formData.get('message')
-    };
-    
-    // Here you would normally send the data to a server
-    console.log('Form submitted:', data);
-    
-    // Show success message
-    alert(currentLang === 'en' ? 
-        'Thank you for your message. We will contact you soon!' : 
-        'شكراً لرسالتك. سنتواصل معك قريباً!'
-    );
-    
-    // Reset form
-    event.target.reset();
-}
-
 // Add smooth scrolling
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
