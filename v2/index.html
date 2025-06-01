@@ -203,7 +203,6 @@
             </div>
             
             <div class="contact-form">
-                <form action="https://formspree.io/f/xkgbwaeq" method="POST">
                     <div class="form-group">
                         <label for="name" data-en="Your Name" data-ar="اسمك">Your Name</label>
                         <input type="text" id="name" name="name" required>
@@ -264,5 +263,50 @@
     </footer>
 
     <script src="script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // Inizializza EmailJS con la tua Public Key
+            emailjs.init("F1dKLtYgt8CB2bWue");
+        })();
+        
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            // Mostra che sta inviando
+            const submitButton = this.querySelector('button[type="submit"]');
+            const originalText = submitButton.textContent;
+            submitButton.textContent = currentLang === 'en' ? 'Sending...' : 'جاري الإرسال...';
+            submitButton.disabled = true;
+            
+            // Prepara i parametri
+            const templateParams = {
+                from_name: document.getElementById('name').value,
+                from_email: document.getElementById('email').value,
+                subject: document.getElementById('subject').value,
+                message: document.getElementById('message').value
+            };
+            
+            // Invia email con i tuoi ID
+            emailjs.send('service_u6r7o3k', 'template_0spir5h', templateParams)
+                .then(function(response) {
+                    alert(currentLang === 'en' ? 
+                        'Thank you! Your message has been sent successfully.' : 
+                        'شكراً! تم إرسال رسالتك بنجاح.'
+                    );
+                    document.getElementById('contactForm').reset();
+                    submitButton.textContent = originalText;
+                    submitButton.disabled = false;
+                }, function(error) {
+                    alert(currentLang === 'en' ? 
+                        'Sorry, there was an error sending your message. Please try again.' : 
+                        'عذراً، حدث خطأ في إرسال رسالتك. يرجى المحاولة مرة أخرى.'
+                    );
+                    console.log('EmailJS error:', error);
+                    submitButton.textContent = originalText;
+                    submitButton.disabled = false;
+                });
+        });
+    </script>
 </body>
 </html>
